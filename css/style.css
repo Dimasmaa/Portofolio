@@ -148,9 +148,9 @@ div.gallery img {
 }
 /* Fitur Media */
 div.media{
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
+  display: -webkit-flex;
+  display: flex;
+  border-radius: 20px solid #ccc;
   width: 400px;
   height: 400px;
 }
