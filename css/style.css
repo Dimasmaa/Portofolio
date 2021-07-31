@@ -147,17 +147,21 @@ div.gallery img {
   transform: translateY(4px);
 }
 /* Fitur Media */
-div.media {
-  	display: -webkit-flex;
-    display: flex;
-    width: 800px;
-    height: 392px;
+div.media{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
+
+div.media:hover {
+  border: 1px solid #777;
+}
+
 div.media img {
-   	background-color:none;
-    width: 100%;
-    height: 100%;
- }
+  width: 100%;
+  height: auto;
+}
 /* Fitur News */
 #more1 {
 	display: none;
