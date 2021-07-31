@@ -159,6 +159,12 @@ div.media img {
     height: 100%;
  }
 /* Fitur News */
-#more {
+#more1 {
+	display: none;
+}
+#more2 {
+	display: none;
+}
+#more3 {
 	display: none;
 }
