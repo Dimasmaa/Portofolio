@@ -35,8 +35,10 @@ float: left;
 border-radius: 10px;
 margin: 5px;
 padding: 10px;
-background-color:white;
-color:black;
+background-color:black;
+color:white;
+position: -webkit-sticky;
+position: sticky;
 }
 /* Fitur Search */
 
@@ -113,8 +115,9 @@ h1 {
 div.gallery {
   	display: -webkit-flex;
     display: flex;
-    width: 381px;
-    height: 392px;
+    margin: 25px;
+    width: 400px;
+    height: 400px;
 }
 
 div.gallery:hover {
@@ -139,7 +142,7 @@ div.gallery img {
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
-  margin-top: 60%;  
+  margin-top: 70%;  
 }
 
 .button:hover {background-color: #999}
