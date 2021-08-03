@@ -187,7 +187,7 @@ ul li {
   list-style: none;
 }
 
-ul li a {
+.footer {
   position: relative;
   width:60px;
   height:60px;
@@ -203,12 +203,12 @@ ul li a {
   transition: .5s;
 }
 
-ul li a:hover {
+.footer:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   text-decoration:none;
 }
 
-ul li a .fab {
+.fab {
   widht: 100%;
   height:100%;
   display:block;
@@ -218,24 +218,4 @@ ul li a .fab {
   font-size:24px;
   color: #262626;
   transition: .5s;
-}
-
-ul li:nth-child(1) a:hover .fab {
-  color: #3b5998;
-}
-
-ul li:nth-child(2) a:hover .fab {
-  color: #00aced;
-}
-
-ul li:nth-child(3) a:hover .fab {
-  color: #dd4b39;
-}
-
-ul li:nth-child(4) a:hover .fab {
-  color: #007bb6;
-}
-
-ul li:nth-child(5) a:hover .fab {
-  color: #e4405f;
 }
