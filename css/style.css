@@ -181,12 +181,6 @@ div.media img {
   justify-content: center;
   align-items: center;
 }
-.btn__container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
  .btn {
     background-color: #fff;
     padding: 1rem 2rem;
