@@ -174,10 +174,28 @@ div.media img {
 	display: none;
 }
 /* Footer */
-.footer {
- color: white;
- border-radius:200px;
- text-align: center;
- padding: 20px;
- margin: 10px;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook{
+ background: white;
+ color:black;
+}
+.fa-linkedin{
+ background: white;
+ color:black;
+}
+.fa-instagram{
+ background: white;
+ color:black;
 }
