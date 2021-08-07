@@ -1,13 +1,42 @@
-html {
-  scroll-behavior: smooth;
+@media screen and (max-width:768px) {
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
 }
+
 body{
     background-color: #000;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 
 }
+/* navbar */
+.topnav {
+  overflow: hidden;
+  padding: 10px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
 
+.topnav a:hover {
+  color: blue;
+}
+
+.topnav a.active {
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -19,7 +48,7 @@ li {
   float: left;
   
 }
-/* Background Home */
+
 li a {
   display: block;
   padding: 8px;
@@ -44,7 +73,8 @@ form{
     width: 50px;
     height: 50px;
     box-sizing: border-box;
-    padding: 5px;
+    left: 67%;
+    top: 7px;
 }
 
 input{
@@ -90,36 +120,53 @@ form:hover .fa{
     background: #07051a;
     color: blue;
 }
+/* Background Home */
+.home{
+  background-size: cover;
+  height:100%;
+  width: 100%;
+}
 /* Real Time */
 .id {
-	text-align: center;
-	color: white;
-	font-size: 300%;
-	top: 20%;
+  text-align: center;
+  color: white;
+  top: 20%;
+  padding: 10px;
+  margin-top: 30%;
+  font-family:'Rockwell';
+  font-size: 100px;
 }
 /* Fitur Profile */
 h1 {
-	text-align: center;
-	margin: 5px;
+  text-align: center;
+  margin: 5px;
+  color:  white;
+  font-family: 'Bradley Hand ITC';
+  font-size: 100px;
+}
+h2{
+  color:white;
+  text-align:center;
+  font-size:50px;
+  font-family:'Bradley Hand ITC';
+  padding-top: 100px;
 }
 /* Fitur Portofolio */
-.grid-container {
-	height: 50%;
-	text-align: center;
+.backgroundportofolio{
+  text-align: center;
 }
-div.gallery {
-  	display: -webkit-flex;
-    display: flex;
+.gallery {
     width: 381px;
     height: 392px;
+    margin: 20px;
+    text-align: center;
 }
 
-div.gallery:hover {
+.gallery:hover {
   border-radius: 20px;
 }
 
-div.gallery img {
-   	background-color:none;
+.gallery img {
     width: 100%;
     height: 100%;
 }
@@ -165,16 +212,21 @@ div.media img {
 }
 /* Fitur News */
 #more1 {
-	display: none;
+  display: none;
 }
 #more2 {
-	display: none;
+  display: none;
 }
 #more3 {
-	display: none;
+  display: none;
 }
 /* Footer */
-
+.iconhp{
+  color:white;
+  border-radius: 200px;
+  width: 2%;
+  margin:10px;
+}
 .btn__container {
   display: flex;
   justify-content: center;
@@ -246,3 +298,305 @@ div.media img {
     }
 }
 
+/* responsive */
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* navbar */
+.topnav {
+  overflow: hidden;
+  padding: 10px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topnav a:hover {
+  color: blue;
+}
+
+.topnav a.active {
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  
+}
+/* Background Home */
+li a {
+  display: block;
+  padding: 8px;
+  background-color: black;
+}
+
+/* Fitur Menu */
+.atas{
+float: left;
+border-radius: 10px;
+margin: 5px;
+padding: 10px;
+background-color:black;
+color:white;
+}
+/* Fitur Search */
+@media only screen and (max-device-width: 640px) and (min-device-width: 320px) {
+  form.vacancy-listings input[type="search"] {
+    width: 300px;
+  }
+}
+
+form{
+    position: relative;
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    left: 5%;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: blue;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: blue;
+}
+/* Real Time */
+.id {
+  text-align: center;
+  color: white;
+  font-size: 300%;
+  top: 20%;
+}
+/* Fitur Profile */
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+h2 {
+  color:white;
+  text-align:center;
+  font-size:50px;
+  font-family:'Bradley Hand ITC';
+  padding-top: 100px;
+}
+/* Fitur Portofolio */
+.backgroundportofolio{
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.gallery {
+    max-width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+.gallery:hover {
+  border-radius: 20px;
+}
+.gallery img {
+    background-color:none;
+    width: 100%;
+    height: 100%;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 3%;  
+}
+
+.button:hover {background-color: #999}
+
+.button:active {
+  background-color: #999;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* Fitur Media */
+div.media{
+  display: -webkit-flex;
+  display: flex;
+  border-radius: 20px solid #ccc;
+  max-width: 100%;
+  height: 100%;
+}
+
+div.media:hover {
+  border: 1px solid #777;
+}
+
+div.media img {
+  max-width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+/* Fitur News */
+#more1 {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+#more3 {
+  display: none;
+}
+/* Footer */
+.iconhp{
+  color:white;
+  border-radius: 200px;
+  width: 9%;
+  margin:10px;
+}
+.btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .btn {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #C71E7E;
+    display: flex;
+   
+    i {
+      color: #DF3796;
+      font-size: 20px;
+    }
+   
+   &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #ff3019 0%,#c90477 100%);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+      i {
+        color: #FFF;
+      }
+    }
+}
+
+.btn-f {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #3B5998;
+    display: flex;
+   
+    i {
+      color: #3B5998;
+      font-size: 20px;
+    }
+   
+   &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #3B5998 0%,#3B5998 100%);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+      i {
+        color: #FFF;
+      }
+    }
+}
+
+.btn-l {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #0077B5;
+    display: flex;
+   
+    i {
+      color: #0077B5;
+      font-size: 20px;
+    }
+   
+   &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #0077B5 0%,#0077B5 100%);
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+      i {
+        color: #FFF;
+      }
+    }
+}
