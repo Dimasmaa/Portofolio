@@ -20,34 +20,54 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 	</head>
 		<body style="overflow-x: hidden;">
-<div class="col-md-12">
+				<div class="col-md-12">
 <!-- Navbar -->
 		<div class="col-md-12" style="background-color: black;">
-		<div class="col-md-6" id="home" style="margin-left: 50%;padding: 10px;">
-			<a href="#home" class="atas">HOME</a>
-			<a href="#profile" class="atas">PROFILE</a>
-			<a href="#portofolio" class="atas">PORTOFOLIO</a>
-			<a href="#media" class="atas">MEDIA</a>
-			<a href="#news" class="atas">NEWS</a>
-			<form action="" style="left: 73%; top: 10px;">
+			<div class="col-md-6">
+
+			</div>
+			<div class="col-md-6">
+					<div class="topnav" id="myTopnav">
+			  <a href="#home">HOME</a>
+			  <a href="#profile">PROFILE</a>
+			  <a href="#portofolio">PORTOFOLIO</a>
+			  <a href="#media">MEDIA</a>
+			  <a href="#news">NEWS</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+			<form action="">
   			<input type="search">
   				<i class="fa fa-search"></i>
 			</form>
+			</div>
+						<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "topnav";
+			  }
+			}
+			</script>
 		</div>
-		</div>
+	</div>
 
 <!-- Menu -->
 	
 <!-- Home -->
 <!-- Real Time -->
 		<a id="HOME"></a>
-		<div class="col-md-12"></div>
+		<div class="col-md-12 home" style="background-image:url('img/Background/slide.jpg');">
+			
+		
 
 		<div class="col-md-4"></div>
-		<div class="col-md-4" style="background-image:url('img/Background/slide.jpg');background-size: cover;width:100%;height:100%;">
+		<div class="col-md-4">
 		
 			<body onload="startTime()">
-		<div class="id"style="padding: 10px; margin-top: 30%; font-family:'Rockwell'; font-size: 100px;">
+		<div class="id">
 		<div id="txt"></div>
 
 		<script>
@@ -72,11 +92,12 @@
 		<div class="col-md-4">
 		
 		</div>
+	</div>
 		<div class="clear:both;"></div>
 
 <!-- Profile -->
 		<div class="col-md-12">
-			<h1 id="profile" style="color:white;font-size: 100px;text-align:center;font-family:'Bradley Hand ITC';padding-top: 10%;">PROFILE</h1>
+			<h1 id="profile">PROFILE</h1>
 		</div>
 		<div class="col-md-12" style="background-image: url('img/Background/Profile.png');width:100%;background-size: cover;">
 		
@@ -96,46 +117,41 @@
 
 <!-- Portofolio -->
 		<div class="col-md-12">
-			<h1 id="portofolio" style="color: white;font-size: 100px;text-align:center;font-family:'Bradley Hand ITC';padding-top: 10%;"> PORTOFOLIO</h1>
+			<h1 id="portofolio"> PORTOFOLIO</h1>
 		</div>
-		<div class="col-md-12" style="background-image: url('img/Background/portofolio.jpg');width:100%;background-size: cover;height:auto;">
-		<div class="col-md-4">
-  		<div class="gallery">
+		<div class="col-md-12">
+			<img src="img/Background/portofolio.jpg" style="position:absolute; width:100%;height:100%;">
+			<div class="col-md-12">
+		<div class="col-md-4 gallery">
   			<a target="" href="">
-   			<img src="img/portofolio/thumbnail1.jpg" style="margin-top: 125px;">
+   			<img src="img/portofolio/thumbnail1.jpg">
   			</a>
+			<button class="button">ARCHITECTURE</button>
 			</div>
-			<center><button class="button">ARCHITECTURE</button></center>
 
-		</div>
-		<div class="col-md-4">
-  		<div class="gallery">
+		<div class="col-md-4 gallery">
   			<a target="" href="">
-   			<img src="img/portofolio/thumbnail2.jpg" style="margin-top: 125px;">
-  			</a>
+   			<img src="img/portofolio/thumbnail2.jpg">
+  			</a>	
+  			<button class="button">CIVIL</button>
 		</div>
-  			<center><button class="button">CIVIL</button></center>
-
-		</div>
-		<div class="col-md-4">
-  		<div class="gallery">
+		<div class="col-md-4 gallery">
   			<a target="" href="">
-   			<img src="img/portofolio/thumbnail3.jpg" style="margin-top: 125px;">
+   			<img src="img/portofolio/thumbnail3.jpg">
   			</a>
+  			<button class="button">MEP</button>
 		</div>
-  			<center><button class="button">MEP</button></center>
+	</div>
+		</div>
   		<div class="clear:both;"></div>
-		</div>
-		</div>
 
 <!-- Media -->
 		<div class="col-md-12">
-		<div class="col-md-12">
-			<h1 id="media" style="color:white;text-align:center;font-size:100px;font-family:'Bradley Hand ITC'; padding-top: 100px;"> MEDIA </h1>
+			<h1 id="media"> MEDIA </h1>
 		</div>
 		<div class="col-md-12">
 				<div class="col-md-6">
-					<h1 style="color:white;text-align:center;font-size:50px;font-family:'Bradley Hand ITC'; padding-top: 100px;"> FOTO </h1>
+					<h2> FOTO </h2>
 				<center>
 					<div class="media">
    				<img src="img/Media/Lamp A Night.jpg">
@@ -143,7 +159,7 @@
 					</center>
 					</div>
 				<div class="col-md-6">
-					<h1 style="color:white;text-align:center;font-size:50px;font-family:'Bradley Hand ITC'; padding-top: 100px;"> VIDEO </h1>
+					<h2> VIDEO </h2>
 				<center>
 					<div class="media">		
    				<img src="img/portofolio/thumbnail3.jpg">
@@ -152,10 +168,7 @@
 			</div>
 			</div>
 			
-		<div class="clear:both;" style="padding-top: 200px"></div>
-		</div>
-		</div>
-
+		<div class="clear:both;"></div>
 <!-- News -->
 	<script>
 		function myFunction1() {
@@ -209,31 +222,31 @@
 		}
 </script>
 		<div class="col-md-12">
-			<h1 id="news" style="color: white;font-size: 100px;text-align:center;font-family:'Bradley Hand ITC';"> NEWS</h1>
+			<h1 id="news"> NEWS</h1>
 		</div>
 		<div class="col-md-12">
-			<h6 style="color:white;font-size: 35px; padding-top: 50px;text-indent: 3%;"> PENGERTIAN TEKNIK ARSITEKTUR </h6>
-			<p style="color: white;font-size: 20px; padding-top: 25px;text-indent: 5%;"> Teknik Arsitektur adalah seni yang dilakukan oleh seseorang yang mempunyai imajinasi <span id="dots1">...</span><span id="more1" >tinggi dalam
+			<h6 style="color:white;font-size: 35px; padding-top: 50px;text-indent: 3%;margin:20px;"> PENGERTIAN TEKNIK ARSITEKTUR </h6>
+			<p style="color: white;font-size: 20px; padding-top: 25px;text-indent: 5%;margin:20px;"> Teknik Arsitektur adalah seni yang dilakukan oleh seseorang yang mempunyai imajinasi <span id="dots1">...</span><span id="more1" >tinggi dalam
 				merancang sebuah bangunan.</span><a onclick="myFunction1()" id="myBtn1">Selengkapnya</a></p>
 		</div>
 
 		<div class="col-md-12">
-			<h6 style="color:white;font-size: 35px; padding-top: 50px;text-indent: 3%;"> PENGERTIAN TEKNIK SIPIL </h6>
-			<p style="color: white;font-size: 20px; padding-top: 25px;text-indent: 5%;"> Teknik Sipil adalah ilmu bangunan yang mencakup hampir semua atau bisa disebut <span id="dots2">...</span><span id="more2"> penerusan dari hasil karya seorang arsitektur. Contohnya merancang, membangun, dan menghitung rancangan sebuah bangunan.</span>
+			<h6 style="color:white;font-size: 35px; padding-top: 50px;text-indent: 3%;margin:20px;"> PENGERTIAN TEKNIK SIPIL </h6>
+			<p style="color: white;font-size: 20px; padding-top: 25px;text-indent: 5%;margin:20px;"> Teknik Sipil adalah ilmu bangunan yang mencakup hampir semua atau bisa disebut <span id="dots2">...</span><span id="more2"> penerusan dari hasil karya seorang arsitektur. Contohnya merancang, membangun, dan menghitung rancangan sebuah bangunan.</span>
 				<a onclick="myFunction2()" id="myBtn2">Selengkapnya</a></p>
 	</div>
 	
 		<div class="col-md-12">
-			<h6 style="color:white;font-size: 35px; padding-top: 50px;text-indent: 3%;"> PENGERTIAN TEKNIK MEP </h6>
-			<p style="color: white;font-size: 20px; padding-top: 25px;text-indent: 5%;"> Teknik MEP adalah ilmu bangunan yang berhubungan dengan Teknik sipil agar <span id="dots3">...</span><span id="more3"> sebuah bangunan dapat digunakan. Contohnya MEP akan menyediakan berbagai fasilitas penujangan sebuah bangunan, seperti Listik, Air, AC, dan lain – lain.</span>
+			<h6 style="color:white;font-size: 35px; padding-top: 50px;text-indent: 3%;margin:20px;"> PENGERTIAN TEKNIK MEP </h6>
+			<p style="color: white;font-size: 20px; padding-top: 25px;text-indent: 5%;margin:20px;"> Teknik MEP adalah ilmu bangunan yang berhubungan dengan Teknik sipil agar <span id="dots3">...</span><span id="more3"> sebuah bangunan dapat digunakan. Contohnya MEP akan menyediakan berbagai fasilitas penujangan sebuah bangunan, seperti Listik, Air, AC, dan lain – lain.</span>
 			<a onclick="myFunction3()" id="myBtn3">Selengkapnya</a></p>
 	</div>
 <!-- Footer -->
 	<div class="col-md-12">
 		<div class="col-md-12" style="padding:70px 30px;">
-			<h1 style="color: white; font-size: 100px; text-align: center;font-family:'Bradley Hand ITC';"> Contact </h1>
+			<h1> Contact </h1>
 				  <div class="btn__container">
-				    <img src="img/icon/phone.png" style="color:white; border-radius: 200px; width: 2%;margin:10px;"><i class="" style="color:#fff; font-size:20px; font-family:'Calibri';">083820425030</i>
+				    <img src="img/icon/phone.png" class="iconhp"><i class="" style="color:#fff; font-size:20px; font-family:'Calibri';">083820425030</i>
 			</div>
 			<div class="btn__container">
 				    <a href="https://www.facebook.com/dimas.watezs" class="btn-f" style="margin: 10px; font-size:30px;">
@@ -249,6 +262,7 @@
 		</div>
 </div>
 			</div>
+		</div>
 
 			<!-- Footer section end -->
 	<script src="js/bootstrap.min.js"></script>
