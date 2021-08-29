@@ -1,4 +1,4 @@
-	<html>
+<html>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,10 +6,12 @@
 		<meta name="author" content="ISI PENULIS">
 		<meta name="keywords" content="ISI KEYWORD">
 	<head>
+		<script src="js/navbar/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="js/navbar/script.js"></script>
 		<title>DMA</title>
 
 <!-- Stylesheets -->
-		<link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+		<link href="css/bootstrap.css" rel="stylesheet"> <!-- css untuk menu -->
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 		<link rel="stylesheet" href="css/flaticon.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -23,34 +25,26 @@
 				<div class="col-md-12">
 <!-- Navbar -->
 		<div class="col-md-12" style="background-color: black;">
-			<div class="col-md-6">
+			<div class="col-md-5">
 
 			</div>
-			<div class="col-md-6">
-					<div class="topnav" id="myTopnav">
-			  <a href="#home">HOME</a>
-			  <a href="#profile">PROFILE</a>
-			  <a href="#portofolio">PORTOFOLIO</a>
-			  <a href="#media">MEDIA</a>
-			  <a href="#news">NEWS</a>
-			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			    <i class="fa fa-bars"></i>
-			  </a>
-			<form action="">
-  			<input type="search">
-  				<i class="fa fa-search"></i>
-			</form>
-			</div>
-						<script>
-			function myFunction() {
-			  var x = document.getElementById("myTopnav");
-			  if (x.className === "topnav") {
-			    x.className += " responsive";
-			  } else {
-			    x.className = "topnav";
-			  }
-			}
-			</script>
+			<div class="col-md-7">
+				<div id='cssmenu'>
+					<ul>
+						<li><a href='#'>HOME</a></li>
+						<li><a href='#'>PROFILE</a>
+						</li>
+						<li><a href='#'>PORTOFOLIO</a></li>
+						<li><a href='#'>MEDIA</a></li>
+						<li><a href='#'>NEWS</a></li>
+
+						<form method="get" action="/vacancy-listings" class="vacancy-listings" style="padding-top:15px;">
+							<input type="search" name="search" value="" placeholder="Search">
+							<button type="submit" value="Search" class="fa fa-search" style="color:blue;background-color:transparent;border: 0px;"></button>
+						</form>
+					</ul>
+
+				</div>
 		</div>
 	</div>
 
