@@ -1,9 +1,9 @@
-@media screen and (max-width:768px) {
+
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
   }
-}
+
 
 body{
     background-color: #000;
